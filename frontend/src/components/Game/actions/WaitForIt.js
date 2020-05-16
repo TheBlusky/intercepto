@@ -12,7 +12,7 @@ const WaitForIt = () => {
   return (
     <div>
       <div>
-        <CountDown t={30} />
+        <CountDown t={45} />
       </div>
       <div>
         <p>{currentSelfTeam ? '😊' : '😈'} {currentPlayer} est en train de coder un message.</p>
