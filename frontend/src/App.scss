@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria%20Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+.game {
+  margin: 0 auto;
+  width: 1430px;
+
+    filter: drop-shadow(6px 6px 3px rgba(50, 50, 0, 1));
+    @media (max-width: 1450px) {
+      width: 710px;
+    }
+
+    @media (max-width: 750px) {
+      width: 350px;
+    }
+}
+
+.lobby-parts {
+  display: grid;
+  grid-template-columns: 2fr 1fr ;
+  max-width: 1430px;
+
+  @media (max-width: 1450px) {
+    grid-template-columns: 1fr;
+  }
+
+  .lobby-part1 {
+    display: grid;
+    grid-template-columns: 2fr;
+    margin: 2px;
+
+
+    @media (max-width: 1450px) {
+      width: 710px;
+    }
+
+    @media (max-width: 750px) {
+      width: 350px;
+    }
+  }
+
+  .lobby-part2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2px;
+    max-width: 710px;
+
+    filter: drop-shadow(6px 6px 3px rgba(50, 50, 0, 1));
+    @media (max-width: 750px) {
+      width: 350px;
+    }
+  }
+}
+
+.play-parts {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  max-width: 1430px;
+
+  @media (max-width: 1450px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 750px) {
+    grid-template-columns: 1fr;
+  }
+
+  .play-part1 {
+    display: grid;
+    grid-template-columns: 2fr;
+    margin: 2px;
+
+
+    @media (max-width: 1450px) {
+      grid-template-columns: 1fr;
+      width: 715px;
+    }
+
+    @media (max-width: 750px) {
+      width: 350px;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .play-part2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2px;
+    max-width: 710px;
+
+    filter: drop-shadow(6px 6px 3px rgba(50, 50, 0, 1));
+    @media (max-width: 750px) {
+      width: 350px;
+    }
+  }
+
+  .play-part3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2px;
+    max-width: 710px;
+
+    filter: drop-shadow(6px 6px 3px rgba(50, 50, 0, 1));
+    @media (max-width: 1450px) {
+      grid-template-columns: 2fr;
+    }
+    @media (max-width: 750px) {
+      width: 350px;
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.game-parts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+    max-width: 1430px;
+
+  @media (max-width: 1450px) {
+    grid-template-columns: 1fr;
+  }
+
+  .game-part {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2px;
+  }
+}
+
+.previous-parts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 700px;
+  max-width: 700px;
+
+  @media (max-width: 750px) {
+    width: 350px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .previous-words {
+    display: grid;
+    filter: drop-shadow(6px 6px 3px rgba(50, 50, 0, 1));
+    grid-template-columns: 1fr;
+    width: 175px;
+    margin: 2px;
+  }
+
+}
+
+.guesses-label {
+  padding-left: 30px;
+  padding-top: 10px;
+  background-color: #8b9395;
+  clip-path: polygon(
+                  0 40px,
+                  20px 0%,
+                  calc(100% - 20px) 0%,
+                  100% 40px,
+                  100% 100%,
+                  0 100%,
+  );
+}
+
+
+.guesses-label ul > li {
+  margin: .5em 0;
+  line-height: 0.5;
+}
+.guesses-label ul {
+  padding-left: 20px;
+}
+.guesses-label li {
+  font-family: 'Gloria Hallelujah';
+}
+.guesses-label span {
+  font-family: 'VT323';
+  font-size: 25px;
+}
+
+.round-list {
+  padding: 1px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 700px;
+  max-width: 700px;
+
+  @media (max-width: 750px) {
+  width: 350px;
+    grid-template-columns: 1fr;
+  }
+
+  .item {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 350px;
+    margin: 2px;
+    filter: drop-shadow(6px 6px 3px rgba(50, 50, 0, 1));
+
+    .sub-item {
+      background-color: #DEDFE1;
+
+      &:nth-child(even) {
+        background-color: #8b9395;
+      }
+    }
+  }
+}
+
+.label {
+  height: 30px;
+  font-family: 'VT323';
+  font-size: 25px;
+  padding-left: 30px;
+  padding-top: 10px;
+  clip-path: polygon(
+                  0% 100%,
+                  20px 0%,
+                  calc(100% - 170px) 0%,
+                  calc(100% - 160px) calc(100% - 5px),
+                  calc(100% - 110px) calc(100% - 5px),
+                  calc(100% - 100px) 0%,
+                  calc(100% - 10px) 0%,
+                  100% 100%,
+  );
+}
+
+.entry {
+  height: 60px;
+}
+
+.word {
+  float: left;
+  font-family: 'Gloria Hallelujah';
+  margin-top: 15px;
+  padding-left: 10px;
+}
+
+.number {
+  float: right;
+  width: 50px;
+  margin-top: 10px;
+}
+.number input {
+  width: 10px;
+}
+
+.number-field {
+  width: 40px;
+}
+
+.number-field input {
+  width: 40px;
+  font-family: 'Gloria Hallelujah';
+}
+
+
+.teamwords {
+  padding-left: 30px;
+  padding-top: 10px;
+  background-color: #8b9395;
+  clip-path: polygon(
+                  0 40px,
+                  20px 0%,
+                  calc(100% - 20px) 0%,
+                  100% 40px,
+                  100% 100%,
+                  0 100%,
+  );
+}
+
+
+.teamwords ul > li {
+  margin: .5em 0;
+  line-height: 0.5;
+}
+.teamwords ul {
+  padding-left: 0px;
+  list-style-type: none;
+}
+.teamwords li {
+  font-family: 'Gloria Hallelujah';
+  font-size: 23px;
+}
+.teamwords span {
+  font-family: 'VT323';
+  font-size: 25px;
+}
+
+
+
+
+.players {
+  padding-left: 30px;
+  padding-top: 10px;
+  background-color: #DEDFE1;
+  clip-path: polygon(
+                  0 40px,
+                  20px 0%,
+                  calc(100% - 20px) 0%,
+                  100% 40px,
+                  100% 100%,
+                  0 100%,
+  );
+}
+.players ul > li {
+  margin: .5em 0;
+  line-height: 0.5;
+}
+.players ul {
+  padding-left: 0px;
+  list-style-type: none;
+}
+.players li {
+  font-family: 'Gloria Hallelujah';
+  font-size: 23px;
+}
+.players span {
+  font-family: 'VT323';
+  font-size: 25px;
+}
+
+.action {
+  padding-left: 30px;
+  padding-top: 10px;
+  background-color: #DEDFE1;
+  clip-path: polygon(
+                  0 40px,
+                  20px 0%,
+                  calc(100% - 20px) 0%,
+                  100% 40px,
+                  100% 100%,
+                  0 100%,
+  );
+}
+
+.action span {
+  font-family: 'VT323';
+  font-size: 25px;
+}
+
+.action p {
+  font-family: 'VT323';
+}
+
+
+.poll {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+    @media (max-width: 750px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+
+  .poll-entry {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.poll-word {
+  font-size: 20px;
+  font-family: 'Gloria Hallelujah';
+  text-align: center;
+}
+
+.poll-button {
+  text-align: center;
+}
+
+.poll-button button {
+  min-width: 40px;
+}
+
+.friends-answers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.friends-answers-name {
+  font-size: 15px;
+  font-family: 'Gloria Hallelujah';
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.friends-answers-code {
+  font-size: 18px;
+  font-family: 'VT323';
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.session-wrapper {
+  padding-left: 30px;
+  padding-top: 10px;
+  background-color: #DEDFE1;
+  clip-path: polygon(
+                  0 40px,
+                  20px 0%,
+                  calc(100% - 20px) 0%,
+                  100% 40px,
+                  100% 100%,
+                  0 100%,
+  );
+}
+
+.session-wrapper span {
+  font-family: 'VT323';
+  font-size: 25px;
+}
+
+.session-wrapper p {
+  font-family: 'VT323';
+}
+
+.nickname-field {
+  width: 300px;
+}
+
+.nickname-field input {
+  font-family: 'Gloria Hallelujah';
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-a, .flip-card-b {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-a {
+}
+
+/* Style the back side */
+.flip-card-b {
+  transform: rotateY(180deg);
+}

@@ -1,0 +1,8 @@
+{
+  "short_name": "Intercepto",
+  "name": "Envoyez des messages codés à vos coéquipiers et tentez d'intercepter les messages de vos adversaires !",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
